@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MD3XFDNW');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) — Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18188577258"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18188577258');
+    </script>
+
+    <!-- SEO -->
+    <title>Coworking Barcarena · Escritórios, salas privativas e endereço fiscal em Vila dos Cabanos</title>
+    <meta name="description"
+        content="Espaço de trabalho em Vila dos Cabanos pra empresas que prestam serviço pra Hydro, Alunorte, Albras e a indústria de Barcarena. Salas privativas, sala de reunião, endereço fiscal e eventos." />
+    <meta name="keywords"
+        content="coworking Barcarena, escritório Vila dos Cabanos, sala de reunião Barcarena, endereço fiscal Barcarena, sala privativa Pará, Hydro, Alunorte, Albras" />
+    <meta name="author" content="Coworking Barcarena" />
+    <meta name="theme-color" content="#15246C" />
+    <link rel="canonical" href="https://coworkingbarcarena.com.br/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Coworking Barcarena · Trabalhe em rede" />
+    <meta property="og:description"
+        content="Espaço de trabalho no Núcleo Urbano de Vila dos Cabanos. Salas privativas, sala de reunião, endereço fiscal e eventos pra quem trabalha na indústria de Barcarena." />
+    <meta property="og:url" content="https://coworkingbarcarena.com.br/" />
+    <meta property="og:site_name" content="Coworking Barcarena" />
+    <meta property="og:image" content="https://coworkingbarcarena.com.br/og-cover.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coworking Barcarena · Trabalhe em rede" />
+    <meta name="twitter:description" content="O coworking dos negócios em Barcarena. Vila dos Cabanos – PA." />
+
+    <!-- Favicon (inline svg) -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315246C'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23F08A4B'/%3E%3Ccircle cx='16' cy='5' r='2' fill='%23F08A4B'/%3E%3Ccircle cx='27' cy='16' r='2' fill='%23F08A4B'/%3E%3Ccircle cx='16' cy='27' r='2' fill='%23F08A4B'/%3E%3Ccircle cx='5' cy='16' r='2' fill='%23F08A4B'/%3E%3Cline x1='16' y1='16' x2='16' y2='5' stroke='%23F08A4B' stroke-width='1.2'/%3E%3Cline x1='16' y1='16' x2='27' y2='16' stroke='%23F08A4B' stroke-width='1.2'/%3E%3Cline x1='16' y1='16' x2='16' y2='27' stroke='%23F08A4B' stroke-width='1.2'/%3E%3Cline x1='16' y1='16' x2='5' y2='16' stroke='%23F08A4B' stroke-width='1.2'/%3E%3C/svg%3E" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+    <!-- Swiper (carousel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <style>
+        /* ============================
+           DESIGN TOKENS — Coworking Barcarena
+           ============================ */
+        :root {
+            --c-bg: #F5F2EC;
+            /* Cream concrete */
+            --c-bg-deep: #ECE7DC;
+            /* Warm shadow */
+            --c-primary: #15246C;
+            /* Deep Cobalt (brand) */
+            --c-primary-dark: #0C1648;
+            /* Night Cobalt */
+            --c-accent: #F08A4B;
+            /* Warm Orange (brand) */
+            --c-accent-light: #F5A56E;
+            --c-dark: #0A1340;
+            /* Near black-blue text */
+            --c-muted: #6B6F87;
+            --c-surface: #FFFFFF;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html,
+        body {
+            background-color: var(--c-bg);
+            color: var(--c-dark);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0;
+            opacity: 0;
+            /* JS fade-in after loader */
+        }
+
+        .display {
+            font-family: var(--font-display);
+            letter-spacing: -0.02em;
+        }
+
+        .mono-label {
+            font-family: var(--font-body);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+
+        /* --- WRAPPER & LAYERS --- */
+        .wrapper {
+            position: relative;
+            z-index: 10;
+            background-color: var(--c-bg);
+            box-shadow: 0 50px 100px rgba(10, 19, 64, 0.18);
+        }
+
+        /* --- TEXT REVEAL --- */
+        .word-wrap {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            padding-bottom: 0.12em;
+        }
+
+        .word-inner {
+            display: inline-block;
+            transform: translateY(110%);
+        }
+
+        /* --- PRELOADER --- */
+        .loader {
+            position: fixed;
+            inset: 0;
+            background: var(--c-primary-dark);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            gap: 24px;
+        }
+
+        .loader-text {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(36px, 6vw, 86px);
+            letter-spacing: -0.04em;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .loader-bar {
+            width: min(280px, 60vw);
+            height: 2px;
+            background: rgba(255, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loader-bar::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--c-accent);
+            transform: translateX(-100%);
+            animation: loadBar 1.6s cubic-bezier(.65, .05, .36, 1) forwards;
+        }
+
+        @keyframes loadBar {
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* --- BRAND DOT (network motif from logo) --- */
+        .brand-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--c-accent);
+            display: inline-block;
+        }
+
+        /* --- NAV --- */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 22px 32px;
+            transition: background-color .4s ease, padding .4s ease, box-shadow .4s ease, color .4s ease;
+            color: #fff;
+            /* default: over dark hero */
+        }
+
+        .nav .nav-logo-mark {
+            color: #fff;
+        }
+
+        .nav .nav-links a {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .nav .nav-links a:hover {
+            color: var(--c-accent);
+        }
+
+        .nav #burger {
+            color: #fff;
+        }
+
+        .nav.scrolled {
+            background-color: rgba(245, 242, 236, 0.92);
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            padding: 14px 32px;
+            box-shadow: 0 1px 0 rgba(10, 19, 64, 0.06);
+            color: var(--c-dark);
+        }
+
+        .nav.scrolled .nav-logo-mark {
+            color: var(--c-primary);
+        }
+
+        .nav.scrolled .nav-links a {
+            color: var(--c-dark);
+        }
+
+        .nav.scrolled .nav-links a:hover {
+            color: var(--c-accent);
+        }
+
+        .nav.scrolled #burger {
+            color: var(--c-primary);
+        }
+
+        .nav a {
+            transition: color .25s ease;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 22px;
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            border-radius: 999px;
+            transition: transform .3s ease, background .3s ease, color .3s ease, box-shadow .3s ease;
+            will-change: transform;
+        }
+
+        .btn-primary {
+            background: var(--c-accent);
+            color: #fff;
+            box-shadow: 0 10px 30px -10px rgba(240, 138, 75, 0.7);
+        }
+
+        .btn-primary:hover {
+            background: var(--c-accent-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid currentColor;
+            color: var(--c-primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--c-primary);
+            color: #fff;
+        }
+
+        .btn-ghost-light {
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-ghost-light:hover {
+            background: #fff;
+            color: var(--c-primary);
+        }
+
+        /* Underline-style "ver mais" */
+        .link-ul {
+            font-size: 12px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            border-bottom: 1px solid currentColor;
+            padding-bottom: 4px;
+            transition: opacity .25s ease, gap .25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .link-ul:hover {
+            opacity: 0.7;
+            gap: 14px;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--c-primary-dark);
+            color: #fff;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 110%;
+            object-fit: cover;
+            opacity: 0.45;
+            filter: saturate(0.85);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(80% 60% at 80% 20%, rgba(240, 138, 75, 0.25), transparent 60%),
+                linear-gradient(180deg, rgba(12, 22, 72, 0.4) 0%, rgba(12, 22, 72, 0.85) 100%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(54px, 11vw, 180px);
+            line-height: 0.92;
+            letter-spacing: -0.04em;
+        }
+
+        .hero h1 .accent {
+            color: var(--c-accent);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Floating ticker */
+        .ticker {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            background: rgba(10, 19, 64, 0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        .ticker-track {
+            display: flex;
+            gap: 56px;
+            white-space: nowrap;
+            animation: tickerMove 40s linear infinite;
+            padding: 14px 0;
+            font-size: 12px;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .ticker-track span {
+            display: inline-flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        @keyframes tickerMove {
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* --- SECTION SPACING --- */
+        section.section {
+            padding: clamp(80px, 12vw, 160px) clamp(20px, 5vw, 80px);
+        }
+
+        /* Section eyebrow */
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 11px;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--c-accent);
+            margin-bottom: 28px;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 36px;
+            height: 1px;
+            background: var(--c-accent);
+            display: inline-block;
+        }
+
+        /* --- SERVICE CARD --- */
+        .service-card {
+            position: relative;
+            background: var(--c-surface);
+            border: 1px solid rgba(10, 19, 64, 0.06);
+            padding: 36px 32px;
+            border-radius: 4px;
+            transition: transform .5s cubic-bezier(.2, .7, .2, 1), box-shadow .5s ease, border-color .5s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 340px;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--c-accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .5s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 50px -25px rgba(10, 19, 64, 0.25);
+            border-color: rgba(10, 19, 64, 0.12);
+        }
+
+        .service-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(240, 138, 75, 0.12);
+            color: var(--c-accent);
+            border-radius: 999px;
+            margin-bottom: 22px;
+        }
+
+        /* --- CARD STACK (DIFERENCIAIS) --- */
+        .stack-section {
+            background: var(--c-primary-dark);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stack-section .net-bg {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(240, 138, 75, 0.18), transparent 35%),
+                radial-gradient(circle at 80% 70%, rgba(240, 138, 75, 0.10), transparent 40%);
+        }
+
+        .stack-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .card-item {
+            position: sticky;
+            top: 12vh;
+            height: 78vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4vh;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            background: #111B4F;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+        }
+
+        .card-content {
+            padding: clamp(28px, 5vw, 60px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #111B4F;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-img-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.6s cubic-bezier(.2, .7, .2, 1);
+        }
+
+        .card-inner:hover .card-img {
+            transform: scale(1.08);
+        }
+
+        @media (max-width: 768px) {
+            .card-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .card-item {
+                top: 6vh;
+                height: 86vh;
+            }
+
+            .card-img-wrap {
+                height: 45%;
+                order: -1;
+            }
+        }
+
+        /* --- GALLERY --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: 14vw;
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-auto-rows: 36vw;
+                gap: 8px;
+            }
+        }
+
+        .gal {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .gal img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.4s cubic-bezier(.2, .7, .2, 1), filter .6s ease;
+            filter: saturate(0.95);
+        }
+
+        .gal:hover img {
+            transform: scale(1.06);
+            filter: saturate(1.1);
+        }
+
+        .gal::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(10, 19, 64, 0.55) 100%);
+            opacity: 0;
+            transition: opacity .4s ease;
+        }
+
+        .gal:hover::after {
+            opacity: 1;
+        }
+
+        .gal-label {
+            position: absolute;
+            left: 16px;
+            bottom: 14px;
+            color: #fff;
+            z-index: 2;
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transform: translateY(8px);
+            opacity: 0;
+            transition: transform .4s ease, opacity .4s ease;
+        }
+
+        .gal:hover .gal-label {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .gal-a {
+            grid-column: span 7;
+            grid-row: span 2;
+        }
+
+        .gal-b {
+            grid-column: span 5;
+            grid-row: span 1;
+        }
+
+        .gal-c {
+            grid-column: span 5;
+            grid-row: span 1;
+        }
+
+        .gal-d {
+            grid-column: span 4;
+            grid-row: span 1;
+        }
+
+        .gal-e {
+            grid-column: span 4;
+            grid-row: span 1;
+        }
+
+        .gal-f {
+            grid-column: span 4;
+            grid-row: span 1;
+        }
+
+        @media (max-width: 768px) {
+
+            .gal-a,
+            .gal-b,
+            .gal-c,
+            .gal-d,
+            .gal-e,
+            .gal-f {
+                grid-column: span 12;
+                grid-row: span 1;
+            }
+        }
+
+        /* --- ABOUT --- */
+        .about-figure {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .about-figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: var(--c-accent);
+            color: #fff;
+            padding: 18px 22px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        /* --- TESTIMONIALS --- */
+        .swiper {
+            padding: 10px 4px 60px 4px;
+            overflow: hidden;
+        }
+
+        .testi-card {
+            background: var(--c-surface);
+            border: 1px solid rgba(10, 19, 64, 0.07);
+            padding: 36px 32px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+            border-radius: 4px;
+        }
+
+        .testi-card .quote {
+            font-family: var(--font-display);
+            font-size: 36px;
+            color: var(--c-accent);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .testi-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: #fff;
+            background: var(--c-primary);
+            font-size: 14px;
+            letter-spacing: 0.05em;
+        }
+
+        .swiper-pagination-bullet {
+            background: var(--c-primary) !important;
+            opacity: 0.25;
+            width: 22px;
+            height: 3px;
+            border-radius: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: var(--c-accent) !important;
+        }
+
+        /* --- CONTACT --- */
+        .contact-block {
+            background: var(--c-primary-dark);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-block .net-bg {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                radial-gradient(circle at 90% 20%, rgba(240, 138, 75, 0.20), transparent 40%),
+                radial-gradient(circle at 10% 90%, rgba(240, 138, 75, 0.10), transparent 40%);
+        }
+
+        .form-input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 14px 0;
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 15px;
+            transition: border-color .3s ease;
+        }
+
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--c-accent);
+        }
+
+        /* --- WHATSAPP FLOATING --- */
+        .wa-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 80;
+            background: #25D366;
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 16px 40px -12px rgba(37, 211, 102, 0.7);
+            transition: transform .3s ease;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.07);
+        }
+
+        .wa-float::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: 999px;
+            border: 2px solid rgba(37, 211, 102, 0.6);
+            animation: waPulse 2s ease-out infinite;
+        }
+
+        @keyframes waPulse {
+            0% {
+                transform: scale(0.85);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.35);
+                opacity: 0;
+            }
+        }
+
+        /* --- FOOTER --- */
+        footer.site-footer {
+            background: #050A2A;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 70px clamp(20px, 5vw, 80px) 40px;
+        }
+
+        footer a {
+            transition: color .25s ease;
+        }
+
+        footer a:hover {
+            color: var(--c-accent);
+        }
+
+        /* --- NOISE OVERLAY --- */
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9000;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* --- MOBILE MENU --- */
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            z-index: 99;
+            background: var(--c-primary-dark);
+            color: #fff;
+            transform: translateY(-100%);
+            transition: transform .55s cubic-bezier(.7, 0, .2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .mobile-menu.open {
+            transform: translateY(0);
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Reveal helper */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        /* Section divider connection dots */
+        .dot-line {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 4px 0;
+        }
+
+        .dot-line::before,
+        .dot-line::after {
+            content: '';
+            height: 1px;
+            flex: 1;
+            background: rgba(10, 19, 64, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD3XFDNW" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Noise -->
+    <div class="noise-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="loader" id="loader">
+        <div class="loader-text">
+            <svg width="42" height="42" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="4" fill="#F08A4B" />
+                <circle cx="16" cy="5" r="2" fill="#F08A4B" />
+                <circle cx="27" cy="16" r="2" fill="#F08A4B" />
+                <circle cx="16" cy="27" r="2" fill="#F08A4B" />
+                <circle cx="5" cy="16" r="2" fill="#F08A4B" />
+                <line x1="16" y1="16" x2="16" y2="5" stroke="#F08A4B" stroke-width="1.2" />
+                <line x1="16" y1="16" x2="27" y2="16" stroke="#F08A4B" stroke-width="1.2" />
+                <line x1="16" y1="16" x2="16" y2="27" stroke="#F08A4B" stroke-width="1.2" />
+                <line x1="16" y1="16" x2="5" y2="16" stroke="#F08A4B" stroke-width="1.2" />
+            </svg>
+            <span>BARCARENA</span>
+        </div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+        <div class="max-w-[1600px] mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#top" class="flex items-center gap-3 nav-logo-mark" aria-label="Coworking Barcarena - Home">
+                <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+                    <circle cx="16" cy="16" r="4" fill="currentColor" />
+                    <circle cx="16" cy="5" r="2" fill="var(--c-accent)" />
+                    <circle cx="27" cy="16" r="2" fill="var(--c-accent)" />
+                    <circle cx="16" cy="27" r="2" fill="var(--c-accent)" />
+                    <circle cx="5" cy="16" r="2" fill="var(--c-accent)" />
+                    <circle cx="24" cy="7" r="1.6" fill="var(--c-accent)" />
+                    <circle cx="24" cy="25" r="1.6" fill="var(--c-accent)" />
+                    <circle cx="8" cy="25" r="1.6" fill="var(--c-accent)" />
+                    <circle cx="8" cy="7" r="1.6" fill="var(--c-accent)" />
+                    <line x1="16" y1="16" x2="16" y2="5" stroke="currentColor" stroke-width="1.1" />
+                    <line x1="16" y1="16" x2="27" y2="16" stroke="currentColor" stroke-width="1.1" />
+                    <line x1="16" y1="16" x2="16" y2="27" stroke="currentColor" stroke-width="1.1" />
+                    <line x1="16" y1="16" x2="5" y2="16" stroke="currentColor" stroke-width="1.1" />
+                    <line x1="16" y1="16" x2="24" y2="7" stroke="var(--c-accent)" stroke-width="0.9" opacity="0.7" />
+                    <line x1="16" y1="16" x2="24" y2="25" stroke="var(--c-accent)" stroke-width="0.9" opacity="0.7" />
+                    <line x1="16" y1="16" x2="8" y2="25" stroke="var(--c-accent)" stroke-width="0.9" opacity="0.7" />
+                    <line x1="16" y1="16" x2="8" y2="7" stroke="var(--c-accent)" stroke-width="0.9" opacity="0.7" />
+                </svg>
+                <div class="leading-none">
+                    <div class="display text-[15px] font-semibold">coworking</div>
+                    <div class="mono-label text-[9px] opacity-70 mt-0.5">BARCARENA</div>
+                </div>
+            </a>
+
+            <!-- Desktop menu -->
+            <div class="nav-links hidden lg:flex items-center gap-10 mono-label">
+                <a href="#servicos">Serviços</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/559180155000?text=Oi!%20Vi%20o%20site%20do%20Coworking%20Barcarena%20e%20quero%20saber%20mais."
+                    target="_blank" rel="noopener" class="btn btn-primary hidden md:inline-flex">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Fale no WhatsApp
+                </a>
+                <!-- Mobile burger -->
+                <button id="burger" class="lg:hidden w-11 h-11 flex items-center justify-center"
+                    aria-label="Abrir menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button id="closeMenu" class="absolute top-6 right-6 w-11 h-11 flex items-center justify-center"
+            aria-label="Fechar menu">
+            <i data-lucide="x" class="w-7 h-7"></i>
+        </button>
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/559180155000" target="_blank" rel="noopener" class="btn btn-primary mt-6">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Fale no WhatsApp
+        </a>
+    </div>
+
+    <!-- WRAPPER -->
+    <div class="wrapper" id="top">
+
+        <!-- ====================== HERO ====================== -->
+        <section class="hero">
+            <img class="hero-img"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=2000&q=80&auto=format&fit=crop"
+                alt="Espaço de coworking moderno em Barcarena, com mesas, iluminação natural e ambiente corporativo" />
+            <div class="hero-overlay"></div>
+
+            <div class="relative z-10 w-full max-w-[1600px] mx-auto px-5 md:px-10 pt-32 pb-32">
+                <div class="mono-label text-white/70 mb-6 flex items-center gap-3 hero-fade opacity-0">
+                    <span class="brand-dot"></span>
+                    Vila dos Cabanos · Barcarena – PA
+                </div>
+
+                <h1 class="display">
+                    <span class="block overflow-hidden hero-text"><span
+                            class="block translate-y-full">TRABALHE</span></span>
+                    <span class="block overflow-hidden hero-text"><span class="block translate-y-full">EM <span
+                                class="accent">rede.</span></span></span>
+                </h1>
+
+                <div class="mt-10 max-w-2xl">
+                    <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed hero-fade opacity-0">
+                        Um espaço de trabalho no coração de Vila dos Cabanos, pensado pra quem chega em Barcarena pra
+                        prestar serviço pras grandes da região — <strong class="text-white font-medium">Hydro, Alunorte,
+                            Albras</strong> e tantas outras. Estrutura corporativa, gente boa por perto e uma recepção
+                        que atende em nome da sua empresa.
+                    </p>
+
+                    <div class="mt-10 flex flex-wrap gap-4 hero-fade opacity-0">
+                        <a href="https://wa.me/559180155000?text=Oi!%20Vi%20o%20site%20do%20Coworking%20Barcarena%20e%20quero%20saber%20mais."
+                            target="_blank" rel="noopener" class="btn btn-primary">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            Fale no WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost-light">
+                            Conheça os planos
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- KPIs -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 hero-fade opacity-0 max-w-4xl">
+                    <div>
+                        <div class="display text-3xl md:text-5xl text-white">100%</div>
+                        <div class="mono-label text-white/60 mt-2">Climatizado</div>
+                    </div>
+                    <div>
+                        <div class="display text-3xl md:text-5xl text-white">Vila</div>
+                        <div class="mono-label text-white/60 mt-2">dos Cabanos</div>
+                    </div>
+                    <div>
+                        <div class="display text-3xl md:text-5xl text-white">+10</div>
+                        <div class="mono-label text-white/60 mt-2">Indústrias do polo</div>
+                    </div>
+                    <div>
+                        <div class="display text-3xl md:text-5xl text-white">24h</div>
+                        <div class="mono-label text-white/60 mt-2">Pra responder</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticker -->
+            <div class="ticker">
+                <div class="ticker-track">
+                    <span><span class="brand-dot"></span> HYDRO</span>
+                    <span><span class="brand-dot"></span> ALUNORTE</span>
+                    <span><span class="brand-dot"></span> ALBRAS</span>
+                    <span><span class="brand-dot"></span> HIDROVIAS</span>
+                    <span><span class="brand-dot"></span> TOYO SETAL</span>
+                    <span><span class="brand-dot"></span> PORTOS CDP</span>
+                    <span><span class="brand-dot"></span> UNITAPAJÓS</span>
+                    <span><span class="brand-dot"></span> ARTEMYN</span>
+                    <!-- duplicate for seamless loop -->
+                    <span><span class="brand-dot"></span> HYDRO</span>
+                    <span><span class="brand-dot"></span> ALUNORTE</span>
+                    <span><span class="brand-dot"></span> ALBRAS</span>
+                    <span><span class="brand-dot"></span> HIDROVIAS</span>
+                    <span><span class="brand-dot"></span> TOYO SETAL</span>
+                    <span><span class="brand-dot"></span> PORTOS CDP</span>
+                    <span><span class="brand-dot"></span> UNITAPAJÓS</span>
+                    <span><span class="brand-dot"></span> ARTEMYN</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== SERVICES ====================== -->
+        <section class="section" id="servicos">
+            <div class="max-w-[1600px] mx-auto">
+                <div class="grid md:grid-cols-12 gap-8 mb-16">
+                    <div class="md:col-span-5">
+                        <div class="eyebrow">01 — Serviços</div>
+                        <h2 class="display text-4xl md:text-6xl leading-[0.95] split-animate">
+                            Tudo o que sua empresa precisa pra trabalhar bem em Barcarena.
+                        </h2>
+                    </div>
+                    <div class="md:col-span-6 md:col-start-7 self-end">
+                        <p class="text-lg text-[var(--c-muted)] font-light leading-relaxed split-animate">
+                            A gente atende quem está vindo pra um projeto na obra, quem está montando filial e quem quer
+                            só profissionalizar o endereço da empresa. Cada plano com contrato simples e direto — você
+                            sabe exatamente o que está contratando.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 — Sala privativa -->
+                    <div class="service-card reveal-up">
+                        <div>
+                            <div class="service-icon"><i data-lucide="door-closed" class="w-5 h-5"></i></div>
+                            <h3 class="display text-2xl font-semibold mb-3">Sala privativa</h3>
+                            <p class="text-[var(--c-muted)] leading-relaxed text-[15px]">
+                                Escritório fechado, com mobília nova, pronto pra sua equipe trabalhar. De 2 a 12
+                                lugares, ar-condicionado, internet rápida e porta com chave. Você se muda hoje e amanhã
+                                já está produzindo.
+                            </p>
+                            <ul class="mt-5 space-y-2.5 text-[14px] text-[var(--c-dark)]">
+                                <li class="flex items-start gap-2.5"><i data-lucide="check"
+                                        class="w-4 h-4 mt-0.5 text-[var(--c-accent)] shrink-0"></i> Mobília nova</li>
+                                <li class="flex items-start gap-2.5"><i data-lucide="check"
+                                        class="w-4 h-4 mt-0.5 text-[var(--c-accent)] shrink-0"></i> Secretariamos suas
+                                    chamadas</li>
+                                <li class="flex items-start gap-2.5"><i data-lucide="check"
+                                        class="w-4 h-4 mt-0.5 text-[var(--c-accent)] shrink-0"></i> Impressão de
+                                    documentos <span class="text-[var(--c-muted)]">(franquia gratuita)</span></li>
+                                <li class="flex items-start gap-2.5"><i data-lucide="check"
+                                        class="w-4 h-4 mt-0.5 text-[var(--c-accent)] shrink-0"></i> Limpeza e
+                                    higienização diária</li>
+                                <li class="flex items-start gap-2.5"><i data-lucide="check"
+                                        class="w-4 h-4 mt-0.5 text-[var(--c-accent)] shrink-0"></i> Água, chá, café e
+                                    cookies em cada andar</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 link-ul text-[var(--c-primary)]">
+                            Ideal pra filiais e obras <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 — Sala de reunião -->
+                    <div class="service-card reveal-up">
+                        <div>
+                            <div class="service-icon"><i data-lucide="users" class="w-5 h-5"></i></div>
+                            <h3 class="display text-2xl font-semibold mb-3">Sala de reunião</h3>
+                            <p class="text-[var(--c-muted)] leading-relaxed text-[15px]">
+                                Pra receber cliente, fornecedor ou fazer uma reunião que não cabe no canto da obra. TV
+                                grande, multimídia, copa próxima e recepção que recebe o seu cliente pelo nome.
+                            </p>
+                        </div>
+                        <div class="mt-8 link-ul text-[var(--c-primary)]">
+                            Reserva por hora <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 — Endereço fiscal -->
+                    <div class="service-card reveal-up">
+                        <div>
+                            <div class="service-icon"><i data-lucide="building-2" class="w-5 h-5"></i></div>
+                            <h3 class="display text-2xl font-semibold mb-3">Endereço fiscal</h3>
+                            <p class="text-[var(--c-muted)] leading-relaxed text-[15px]">
+                                Abra filial em Barcarena usando o nosso endereço. A gente recebe sua correspondência,
+                                atende em nome da sua empresa e cuida do que o cliente precisa enquanto você toca o
+                                serviço lá fora.
+                            </p>
+                        </div>
+                        <div class="mt-8 link-ul text-[var(--c-primary)]">
+                            Escritório virtual <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 — Eventos -->
+                    <div class="service-card reveal-up">
+                        <div>
+                            <div class="service-icon"><i data-lucide="presentation" class="w-5 h-5"></i></div>
+                            <h3 class="display text-2xl font-semibold mb-3">Eventos & treinamentos</h3>
+                            <p class="text-[var(--c-muted)] leading-relaxed text-[15px]">
+                                Espaço pra treinamento de NR, integração de equipe, palestra ou capacitação. A gente
+                                monta a sala do jeito que você precisa, organiza o coffee e dá suporte no dia.
+                            </p>
+                        </div>
+                        <div class="mt-8 link-ul text-[var(--c-primary)]">
+                            Diárias e meios-períodos <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 — Lounge & networking -->
+                    <div class="service-card reveal-up">
+                        <div>
+                            <div class="service-icon"><i data-lucide="coffee" class="w-5 h-5"></i></div>
+                            <h3 class="display text-2xl font-semibold mb-3">Lounge & networking</h3>
+                            <p class="text-[var(--c-muted)] leading-relaxed text-[15px]">
+                                Áreas pra esticar o café, esperar uma reunião ou só dar uma respirada. Aqui você cruza
+                                com gente que trabalha no mesmo universo — e bom negócio costuma começar assim.
+                            </p>
+                        </div>
+                        <div class="mt-8 link-ul text-[var(--c-primary)]">
+                            Acesso pra clientes do espaço <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== CARD STACK / DIFERENCIAIS ====================== -->
+        <section class="stack-section" id="diferenciais">
+            <div class="net-bg"></div>
+            <div class="relative z-10 text-center px-6 mb-16 pt-20">
+                <div class="eyebrow text-[var(--c-accent)] justify-center" style="display:inline-flex">02 — Diferenciais
+                </div>
+                <h2 class="display text-4xl md:text-7xl mt-2">Por que vale a pena trabalhar daqui.</h2>
+                <p class="max-w-2xl mx-auto mt-6 text-white/70 font-light text-lg">
+                    Quatro coisas que a gente considera essenciais — e que costumam ser o que faz uma empresa escolher
+                    continuar com a gente depois do primeiro contrato.
+                </p>
+            </div>
+
+            <div class="stack-container px-4 md:px-10 pb-20">
+
+                <!-- DIFF 1 -->
+                <div class="card-item">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div>
+                                <div class="display text-6xl text-[var(--c-accent)]/30 mb-4">01</div>
+                                <h3 class="display text-3xl md:text-4xl font-semibold">No Núcleo Urbano, do lado do
+                                    polo.</h3>
+                                <p class="mono-label mt-4 text-white/60">Vila dos Cabanos</p>
+                            </div>
+                            <p class="text-white/70 font-light leading-relaxed text-[15px] max-w-md">
+                                Estamos a poucos minutos da Hydro, Alunorte, Albras e dos portos da região, numa área
+                                bem servida de Barcarena. Sua equipe perto do cliente, e o cliente sem ter que se enfiar
+                                em qualquer canto pra chegar até você.
+                            </p>
+                            <div class="flex items-center gap-3 mono-label text-[var(--c-accent)]">
+                                <span class="brand-dot"></span> Endereço comercial em Barcarena
+                            </div>
+                        </div>
+                        <div class="card-img-wrap">
+                            <img class="card-img"
+                                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80&auto=format&fit=crop"
+                                alt="Vista do ambiente moderno do coworking em Vila dos Cabanos" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIFF 2 -->
+                <div class="card-item">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div>
+                                <div class="display text-6xl text-[var(--c-accent)]/30 mb-4">02</div>
+                                <h3 class="display text-3xl md:text-4xl font-semibold">Estrutura de verdade.</h3>
+                                <p class="mono-label mt-4 text-white/60">Climatizado · Internet rápida · Recepção</p>
+                            </div>
+                            <p class="text-white/70 font-light leading-relaxed text-[15px] max-w-md">
+                                Cadeira que aguenta um dia inteiro de trabalho, ar-condicionado em todas as salas,
+                                internet que não te derruba na reunião, e uma recepção que atende seu cliente como se
+                                fosse o nosso.
+                            </p>
+                            <div class="flex items-center gap-3 mono-label text-[var(--c-accent)]">
+                                <span class="brand-dot"></span> Tudo pronto pra usar
+                            </div>
+                        </div>
+                        <div class="card-img-wrap">
+                            <img class="card-img"
+                                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&auto=format&fit=crop"
+                                alt="Sala privativa equipada com mesas de reunião e iluminação corporativa" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIFF 3 -->
+                <div class="card-item">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div>
+                                <div class="display text-6xl text-[var(--c-accent)]/30 mb-4">03</div>
+                                <h3 class="display text-3xl md:text-4xl font-semibold">Gente boa por perto.</h3>
+                                <p class="mono-label mt-4 text-white/60">Engenheiros · Consultorias · Prestadores</p>
+                            </div>
+                            <p class="text-white/70 font-light leading-relaxed text-[15px] max-w-md">
+                                No café você cruza com gente da obra, da logística, da consultoria, do RH. É a partir
+                                dessas conversas soltas que aparece o próximo contrato, o fornecedor confiável, a
+                                indicação que faltava.
+                            </p>
+                            <div class="flex items-center gap-3 mono-label text-[var(--c-accent)]">
+                                <span class="brand-dot"></span> Negócio bom começa numa boa conversa
+                            </div>
+                        </div>
+                        <div class="card-img-wrap">
+                            <img class="card-img"
+                                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80&auto=format&fit=crop"
+                                alt="Profissionais conversando em ambiente de coworking, fazendo networking" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIFF 4 -->
+                <div class="card-item">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div>
+                                <div class="display text-6xl text-[var(--c-accent)]/30 mb-4">04</div>
+                                <h3 class="display text-3xl md:text-4xl font-semibold">Contrato direto e relação de
+                                    gente.</h3>
+                                <p class="mono-label mt-4 text-white/60">Contrato claro · Garantias justas · Resposta
+                                    rápida</p>
+                            </div>
+                            <p class="text-white/70 font-light leading-relaxed text-[15px] max-w-md">
+                                Aqui a conversa é direta: a gente explica como funciona, você assina sabendo exatamente
+                                o que está contratando, e quando precisa de alguma coisa fala com alguém que te conhece
+                                pelo nome — não com um 0800.
+                            </p>
+                            <div class="flex items-center gap-3 mono-label text-[var(--c-accent)]">
+                                <span class="brand-dot"></span> Cláudia Fiúza · Idealizadora
+                            </div>
+                        </div>
+                        <div class="card-img-wrap">
+                            <img class="card-img"
+                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80&auto=format&fit=crop"
+                                alt="Sala de reunião pronta para uso com mesa e cadeiras corporativas" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================== GALLERY ====================== -->
+        <section class="section" id="galeria">
+            <div class="max-w-[1600px] mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+                    <div>
+                        <div class="eyebrow">03 — Galeria</div>
+                        <h2 class="display text-4xl md:text-6xl leading-[0.95] split-animate">
+                            Conheça o espaço <br><span class="text-[var(--c-accent)] italic font-medium">por
+                                dentro.</span>
+                        </h2>
+                    </div>
+                    <p class="md:max-w-md text-[var(--c-muted)] font-light text-lg">
+                        Da recepção à sala de reunião, cada canto foi pensado pra você se sentir em casa e o seu cliente
+                        se sentir bem recebido. Bem cuidado, sem exagero, do jeito que tem que ser.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gal gal-a">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1800&q=80&auto=format&fit=crop"
+                            alt="Sala de reunião principal com mesa grande, iluminação dimerizada e ambiente elegante" />
+                        <span class="gal-label">01 / Sala de reunião</span>
+                    </div>
+                    <div class="gal gal-b">
+                        <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=1200&q=80&auto=format&fit=crop"
+                            alt="Área de trabalho com várias mesas e cadeiras ergonômicas no Coworking Barcarena" />
+                        <span class="gal-label">02 / Área de trabalho</span>
+                    </div>
+                    <div class="gal gal-c">
+                        <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=80&auto=format&fit=crop"
+                            alt="Lounge com poltronas e mesa de centro para descanso" />
+                        <span class="gal-label">03 / Lounge</span>
+                    </div>
+                    <div class="gal gal-d">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80&auto=format&fit=crop"
+                            alt="Sala privativa com mesa de reuniões e parede de vidro" />
+                        <span class="gal-label">04 / Sala privativa</span>
+                    </div>
+                    <div class="gal gal-e">
+                        <img src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1200&q=80&auto=format&fit=crop"
+                            alt="Recepção do coworking com balcão e identidade visual" />
+                        <span class="gal-label">05 / Recepção</span>
+                    </div>
+                    <div class="gal gal-f">
+                        <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?w=1200&q=80&auto=format&fit=crop"
+                            alt="Copa e área de café para os usuários do coworking" />
+                        <span class="gal-label">06 / Copa & café</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== ABOUT ====================== -->
+        <section class="section bg-[var(--c-bg-deep)]" id="sobre">
+            <div class="max-w-[1600px] mx-auto grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <div class="about-figure aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=1400&q=80&auto=format&fit=crop"
+                            alt="Equipe trabalhando junto em uma área comum do Coworking Barcarena" />
+                        <div class="about-badge">Feito por gente daqui.</div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6 md:col-start-7">
+                    <div class="eyebrow">04 — Sobre</div>
+                    <h2 class="display text-4xl md:text-5xl leading-[0.95] split-animate">
+                        Barcarena merecia um espaço assim. A gente fez.
+                    </h2>
+
+                    <div class="mt-8 space-y-6 text-[var(--c-muted)] text-lg font-light leading-relaxed">
+                        <p>
+                            Quem trabalha em Barcarena sabe: o município cresce todo dia. Tem contrato fechando, equipe
+                            chegando, projeto novo na Hydro, na Alunorte, na Albras, no porto. Mas quem desembarca aqui
+                            pra prestar serviço quase sempre passa pelo mesmo perrengue — acha mesa, não acha sala. Acha
+                            sala, mas a internet é fraca. Tem internet, mas não tem um lugar decente pra receber o
+                            cliente.
+                        </p>
+                        <p>
+                            O <strong class="text-[var(--c-dark)] font-medium">Coworking Barcarena</strong> foi feito
+                            pra resolver isso. Um espaço no Núcleo Urbano de Vila dos Cabanos, climatizado, bem cuidado,
+                            com gente atenciosa na recepção e o tipo de estrutura que sua empresa precisa quando o
+                            cliente liga pra marcar uma visita.
+                        </p>
+                        <p>
+                            Mais do que um endereço, é o lugar onde fornecedor encontra cliente, projeto encontra
+                            parceiro, e sua operação encontra Barcarena de jeito profissional.
+                        </p>
+                    </div>
+
+                    <div class="dot-line mt-10"></div>
+
+                    <!-- Assinatura -->
+                    <div class="flex items-center gap-4 mt-8">
+                        <div
+                            class="w-14 h-14 rounded-full bg-[var(--c-primary)] text-white flex items-center justify-center display font-semibold text-lg">
+                            CF</div>
+                        <div>
+                            <div class="display font-semibold text-[var(--c-dark)]">Cláudia Fiúza</div>
+                            <div class="mono-label text-[var(--c-muted)]">Idealizadora · Coworking Barcarena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== TESTIMONIALS ====================== -->
+        <section class="section" id="depoimentos">
+            <div class="max-w-[1600px] mx-auto">
+                <div class="grid md:grid-cols-12 gap-8 mb-14">
+                    <div class="md:col-span-7">
+                        <div class="eyebrow">05 — Depoimentos</div>
+                        <h2 class="display text-4xl md:text-6xl leading-[0.95] split-animate">
+                            Quem já trabalha <br>daqui <span class="text-[var(--c-accent)] italic font-medium">conta pra
+                                você.</span>
+                        </h2>
+                    </div>
+                    <div class="md:col-span-4 md:col-start-9 self-end">
+                        <p class="text-[var(--c-muted)] font-light text-lg">
+                            Empresas que escolheram o Coworking Barcarena como base das suas equipes na região e
+                            ficaram.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper testimonialsSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Testemunho 1 -->
+                        <div class="swiper-slide">
+                            <div class="testi-card">
+                                <div>
+                                    <div class="quote">"</div>
+                                    <p class="text-[var(--c-dark)] leading-relaxed">
+                                        Chegamos com a equipe pra um contrato de seis meses e em dois dias já estávamos
+                                        trabalhando de lá. Achei que ia ser complicado, mas foi tudo na conversa,
+                                        contrato direto. A gente focou no projeto e pronto.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3 mt-6">
+                                    <div class="testi-avatar">RM</div>
+                                    <div>
+                                        <div class="font-medium text-sm">Rafael Mendes</div>
+                                        <div class="mono-label text-[var(--c-muted)]">Engenharia industrial</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 2 -->
+                        <div class="swiper-slide">
+                            <div class="testi-card">
+                                <div>
+                                    <div class="quote">"</div>
+                                    <p class="text-[var(--c-dark)] leading-relaxed">
+                                        Costumo receber cliente lá pra reunião e sempre comentam: "que lugar bonito". A
+                                        recepção atende super bem, o café é de verdade — não é aquele de máquina. Faz
+                                        diferença na conversa.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3 mt-6">
+                                    <div class="testi-avatar">JC</div>
+                                    <div>
+                                        <div class="font-medium text-sm">Juliana Castro</div>
+                                        <div class="mono-label text-[var(--c-muted)]">Consultoria portuária</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 3 -->
+                        <div class="swiper-slide">
+                            <div class="testi-card">
+                                <div>
+                                    <div class="quote">"</div>
+                                    <p class="text-[var(--c-dark)] leading-relaxed">
+                                        Achei o que precisava num só lugar: internet boa, sala fechada e gente do lado
+                                        pra trocar ideia. Já indiquei pra dois fornecedores nossos que estavam
+                                        procurando base em Barcarena.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3 mt-6">
+                                    <div class="testi-avatar">FT</div>
+                                    <div>
+                                        <div class="font-medium text-sm">Felipe Torres</div>
+                                        <div class="mono-label text-[var(--c-muted)]">Logística & transporte</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 4 -->
+                        <div class="swiper-slide">
+                            <div class="testi-card">
+                                <div>
+                                    <div class="quote">"</div>
+                                    <p class="text-[var(--c-dark)] leading-relaxed">
+                                        Marquei um treinamento de NR pra 25 pessoas e a equipe deles ajudou em tudo:
+                                        layout da sala, coffee, recepção do pessoal. Saiu redondinho. Não vou fazer em
+                                        outro lugar.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3 mt-6">
+                                    <div class="testi-avatar">AS</div>
+                                    <div>
+                                        <div class="font-medium text-sm">Adriana Souza</div>
+                                        <div class="mono-label text-[var(--c-muted)]">RH industrial</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 5 -->
+                        <div class="swiper-slide">
+                            <div class="testi-card">
+                                <div>
+                                    <div class="quote">"</div>
+                                    <p class="text-[var(--c-dark)] leading-relaxed">
+                                        Abri filial usando o endereço deles enquanto a gente conseguia um espaço
+                                        próprio. A correspondência chega, a recepção atende em nome da empresa — pro
+                                        cliente, parece que sempre estivemos por aqui.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3 mt-6">
+                                    <div class="testi-avatar">LP</div>
+                                    <div>
+                                        <div class="font-medium text-sm">Lucas Pereira</div>
+                                        <div class="mono-label text-[var(--c-muted)]">Montagem elétrica</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== CONTACT ====================== -->
+        <section class="contact-block section" id="contato">
+            <div class="net-bg"></div>
+            <div class="relative z-10 max-w-[1600px] mx-auto">
+                <div class="grid md:grid-cols-12 gap-12">
+
+                    <!-- Left -->
+                    <div class="md:col-span-7">
+                        <div class="eyebrow text-[var(--c-accent)]">06 — Contato</div>
+                        <h2 class="display text-4xl md:text-7xl text-white leading-[0.95]">
+                            Vem <span class="text-[var(--c-accent)] italic font-medium">conhecer</span><br>o espaço?
+                        </h2>
+                        <p class="mt-8 text-white/70 font-light text-lg max-w-xl">
+                            Manda uma mensagem no WhatsApp. A Cláudia ou alguém da equipe te responde, agenda uma visita
+                            e explica direitinho como funciona — sem pressa, sem pressão.
+                        </p>
+
+                        <div class="mt-10 flex flex-wrap gap-4">
+                            <a href="https://wa.me/559180155000?text=Oi!%20Vi%20o%20site%20do%20Coworking%20Barcarena%20e%20quero%20marcar%20uma%20visita."
+                                target="_blank" rel="noopener" class="btn btn-primary">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                Falar no WhatsApp
+                            </a>
+                            <a href="tel:+559180155000" class="btn btn-ghost-light">
+                                <i data-lucide="phone" class="w-4 h-4"></i>
+                                (91) 98015-5000
+                            </a>
+                        </div>
+
+                        <div class="dot-line opacity-30 mt-14 mb-8"></div>
+
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div>
+                                <div class="mono-label text-[var(--c-accent)] mb-3">Endereço</div>
+                                <p class="text-white/80 leading-relaxed">
+                                    Rua Dezesseis de Abril, S/N<br>
+                                    Quadra 354, Lote 35<br>
+                                    Núcleo Urbano · Vila dos Cabanos<br>
+                                    Barcarena – Pará
+                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Dezesseis+de+Abril+Quadra+354+N%C3%BAcleo+Urbano+Vila+dos+Cabanos+Barcarena+PA"
+                                    target="_blank" rel="noopener"
+                                    class="link-ul text-[var(--c-accent)] mt-4 inline-flex">
+                                    Ver no Google Maps <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mono-label text-[var(--c-accent)] mb-3">Horário</div>
+                                <p class="text-white/80 leading-relaxed">
+                                    Segunda a sexta — 08h às 18h<br>
+                                    Sábado — com agendamento<br>
+                                    <span class="text-white/50 text-sm">Quem tem sala privativa tem acesso estendido —
+                                        combinamos no contrato.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="md:col-span-5">
+                        <div class="bg-white/[0.04] border border-white/10 p-8 backdrop-blur-md rounded">
+                            <h3 class="display text-xl font-semibold mb-2 text-white">Manda sua mensagem</h3>
+                            <p class="text-white/60 text-sm mb-8">Conta rapidamente como podemos te ajudar — a gente
+                                responde no WhatsApp.</p>
+
+                            <form id="contactForm" class="space-y-6" action="https://wa.me/559180155000" method="get">
+                                <div>
+                                    <label class="mono-label text-white/50">Nome</label>
+                                    <input type="text" name="nome" required class="form-input"
+                                        placeholder="Como podemos te chamar?" />
+                                </div>
+                                <div>
+                                    <label class="mono-label text-white/50">Empresa</label>
+                                    <input type="text" name="empresa" class="form-input"
+                                        placeholder="Sua empresa (se já tiver)" />
+                                </div>
+                                <div>
+                                    <label class="mono-label text-white/50">Telefone</label>
+                                    <input type="tel" name="telefone" required class="form-input"
+                                        placeholder="(91) 98015-5000" />
+                                </div>
+                                <div>
+                                    <label class="mono-label text-white/50">O que você precisa</label>
+                                    <textarea name="mensagem" rows="3" class="form-input resize-none"
+                                        placeholder="Sala privativa, reunião, endereço fiscal, evento..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full justify-center mt-4">
+                                    Enviar pelo WhatsApp
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </button>
+                                <p class="mono-label text-white/40 text-center">Resposta em poucos minutos no horário
+                                    comercial.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- /WRAPPER -->
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="site-footer">
+        <div class="max-w-[1600px] mx-auto grid md:grid-cols-12 gap-10">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3 text-white">
+                    <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+                        <circle cx="16" cy="16" r="4" fill="#fff" />
+                        <circle cx="16" cy="5" r="2" fill="#F08A4B" />
+                        <circle cx="27" cy="16" r="2" fill="#F08A4B" />
+                        <circle cx="16" cy="27" r="2" fill="#F08A4B" />
+                        <circle cx="5" cy="16" r="2" fill="#F08A4B" />
+                        <line x1="16" y1="16" x2="16" y2="5" stroke="#F08A4B" stroke-width="1.1" />
+                        <line x1="16" y1="16" x2="27" y2="16" stroke="#F08A4B" stroke-width="1.1" />
+                        <line x1="16" y1="16" x2="16" y2="27" stroke="#F08A4B" stroke-width="1.1" />
+                        <line x1="16" y1="16" x2="5" y2="16" stroke="#F08A4B" stroke-width="1.1" />
+                    </svg>
+                    <div class="display text-white text-lg font-semibold">Coworking Barcarena</div>
+                </div>
+                <p class="mt-6 text-sm leading-relaxed max-w-md">
+                    Um espaço pensado pra quem trabalha em Barcarena — feito por gente daqui, pra quem precisa de
+                    estrutura, recepção atenciosa e um bom café no meio do dia.
+                </p>
+            </div>
+
+            <div class="md:col-span-3">
+                <div class="mono-label text-white/40 mb-4">Navegação</div>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4">
+                <div class="mono-label text-white/40 mb-4">Contato</div>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="tel:+559180155000">(91) 98015-5000</a></li>
+                    <li><a href="https://wa.me/559180155000?text=Oi!%20Vi%20o%20site%20do%20Coworking%20Barcarena%20e%20quero%20saber%20mais."
+                            target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li>Rua Dezesseis de Abril, S/N — Qd. 354, Lt. 35 — Núcleo Urbano — Vila dos Cabanos, Barcarena –
+                        Pará</li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="max-w-[1600px] mx-auto mt-16 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+            <div>© <span id="year"></span> Coworking Barcarena · Todos os direitos reservados</div>
+            <div class="mono-label opacity-60">coworkingbarcarena.com.br</div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating -->
+    <a href="https://wa.me/559180155000?text=Oi!%20Vi%20o%20site%20do%20Coworking%20Barcarena%20e%20quero%20saber%20mais."
+        target="_blank" rel="noopener" class="wa-float" aria-label="Conversar pelo WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path
+                d="M16 .395C7.163.395 0 7.557 0 16.395c0 2.823.738 5.59 2.142 8.025L0 32.395l8.18-2.144A15.945 15.945 0 0 0 16 32.395c8.836 0 16-7.163 16-16s-7.164-16-16-16zm0 29.082c-2.534 0-5.02-.682-7.197-1.97l-.515-.305-4.857 1.273 1.296-4.732-.336-.488A13.286 13.286 0 0 1 2.69 16.395C2.69 9.045 8.65 3.085 16 3.085s13.31 5.96 13.31 13.31S23.35 29.477 16 29.477zm7.327-9.953c-.4-.2-2.378-1.174-2.747-1.308-.368-.134-.636-.2-.904.2-.268.4-1.039 1.308-1.273 1.575-.234.267-.468.3-.868.1-.4-.2-1.689-.622-3.217-1.984-1.19-1.062-1.993-2.374-2.227-2.774-.234-.4-.025-.617.175-.815.18-.18.4-.467.6-.7.2-.234.267-.4.4-.668.134-.267.067-.5-.033-.7-.1-.2-.904-2.184-1.239-2.99-.327-.786-.658-.68-.904-.692a17.16 17.16 0 0 0-.768-.014c-.267 0-.7.1-1.066.5-.368.4-1.402 1.37-1.402 3.34s1.436 3.87 1.635 4.137c.2.267 2.823 4.31 6.84 6.043.957.413 1.703.66 2.285.846.96.305 1.834.262 2.524.158.77-.115 2.378-.972 2.713-1.91.335-.94.335-1.74.234-1.91-.1-.167-.367-.267-.768-.467z" />
+        </svg>
+    </a>
+
+    <!-- ============================ SCRIPTS ============================ -->
+    <script>
+        // Lucide icons
+        lucide.createIcons();
+
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // GSAP setup
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Lenis smooth scroll
+        const lenis = new Lenis({
+            duration: 1.15,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+        });
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        lenis.on('scroll', ScrollTrigger.update);
+
+        // Anchor links via Lenis
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const id = a.getAttribute('href');
+                if (id.length > 1) {
+                    const target = document.querySelector(id);
+                    if (target) {
+                        e.preventDefault();
+                        lenis.scrollTo(target, { offset: -40, duration: 1.2 });
+                        // close mobile menu if open
+                        document.getElementById('mobileMenu').classList.remove('open');
+                    }
+                }
+            });
+        });
+
+        // Split text utility
+        function splitTextToWords(el) {
+            const text = el.innerHTML;
+            // Preserve <br> and <span> markup
+            const parts = text.split(/(<br\s*\/?>|<span[^>]*>[^<]*<\/span>)/i);
+            el.innerHTML = '';
+            parts.forEach(part => {
+                if (!part) return;
+                if (/^<br/i.test(part)) {
+                    el.appendChild(document.createElement('br'));
+                } else if (/^<span/i.test(part)) {
+                    const tmp = document.createElement('div');
+                    tmp.innerHTML = part;
+                    const inner = tmp.firstChild;
+                    const text2 = inner.innerText;
+                    inner.innerHTML = '';
+                    text2.split(' ').forEach(w => {
+                        const wrap = document.createElement('span');
+                        wrap.className = 'word-wrap';
+                        wrap.innerHTML = `<span class="word-inner">${w}&nbsp;</span>`;
+                        inner.appendChild(wrap);
+                    });
+                    el.appendChild(inner);
+                } else {
+                    part.split(' ').forEach(w => {
+                        if (!w.trim()) return;
+                        const wrap = document.createElement('span');
+                        wrap.className = 'word-wrap';
+                        wrap.innerHTML = `<span class="word-inner">${w}&nbsp;</span>`;
+                        el.appendChild(wrap);
+                    });
+                }
+            });
+        }
+        document.querySelectorAll('.split-animate').forEach(splitTextToWords);
+
+        // Loader → init
+        setTimeout(() => {
+            gsap.timeline({ onComplete: initSite })
+                .to('#loader', { yPercent: -100, duration: 1, ease: 'power4.inOut' })
+                .to('body', { opacity: 1, duration: 0.2 }, '<');
+        }, 1800);
+
+        function initSite() {
+            // Hero text reveal
+            gsap.to('.hero-text span', { y: 0, stagger: 0.12, duration: 1.3, ease: 'power4.out' });
+            gsap.to('.hero-fade', { opacity: 1, duration: 1, stagger: 0.15, delay: 0.4 });
+
+            // Hero image parallax
+            gsap.to('.hero-img', {
+                yPercent: 25,
+                ease: 'none',
+                scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+            });
+
+            // Generic split text reveal on scroll
+            document.querySelectorAll('.split-animate').forEach(el => {
+                const words = el.querySelectorAll('.word-inner');
+                gsap.to(words, {
+                    y: '0%',
+                    duration: 1,
+                    ease: 'power3.out',
+                    stagger: 0.025,
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 88%',
+                        toggleActions: 'play none none reverse'
+                    }
+                });
+            });
+
+            // Reveal up
+            document.querySelectorAll('.reveal-up').forEach((el, i) => {
+                gsap.to(el, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.9,
+                    ease: 'power3.out',
+                    delay: (i % 3) * 0.08,
+                    scrollTrigger: { trigger: el, start: 'top 88%' }
+                });
+            });
+
+            // Card stack scale-out
+            const cards = gsap.utils.toArray('.card-item');
+            cards.forEach((card, i) => {
+                const next = cards[i + 1];
+                if (next) {
+                    gsap.to(card.querySelector('.card-inner'), {
+                        scale: 0.92,
+                        opacity: 0.5,
+                        ease: 'none',
+                        scrollTrigger: {
+                            trigger: next,
+                            start: 'top bottom',
+                            end: 'top 12vh',
+                            scrub: true
+                        }
+                    });
+                }
+            });
+
+            // Nav scroll state
+            ScrollTrigger.create({
+                start: 100, end: 99999,
+                onToggle: self => document.getElementById('nav').classList.toggle('scrolled', self.isActive)
+            });
+
+            // Subtle parallax on gallery images
+            gsap.utils.toArray('.gal img').forEach(img => {
+                gsap.fromTo(img, { yPercent: -5 }, {
+                    yPercent: 5, ease: 'none',
+                    scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true }
+                });
+            });
+        }
+
+        // Swiper testimonials
+        new Swiper('.testimonialsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 5500, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+
+        // Mobile menu
+        document.getElementById('burger').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.add('open');
+        });
+        document.getElementById('closeMenu').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.remove('open');
+        });
+
+        // Contact form → WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = new FormData(e.target);
+            const nome = encodeURIComponent(data.get('nome') || '');
+            const empresa = encodeURIComponent(data.get('empresa') || '');
+            const telefone = encodeURIComponent(data.get('telefone') || '');
+            const mensagem = encodeURIComponent(data.get('mensagem') || '');
+            const text =
+                `Oi! Vi o site do Coworking Barcarena e quero saber mais.
+
+Nome: ${decodeURIComponent(nome)}
+Empresa: ${decodeURIComponent(empresa)}
+Telefone: ${decodeURIComponent(telefone)}
+
+${decodeURIComponent(mensagem)}`;
+            const url = `https://wa.me/559180155000?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+
+</html>
